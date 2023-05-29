@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AAA/AAA.iml" filepath="$PROJECT_DIR$/AAA/AAA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstract/Abstract.iml" filepath="$PROJECT_DIR$/Abstract/Abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignments/src/Assignments/Assignments.iml" filepath="$PROJECT_DIR$/Assignments/src/Assignments/Assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enum/Enum.iml" filepath="$PROJECT_DIR$/Enum/Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exception/Exception.iml" filepath="$PROJECT_DIR$/Exception/Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/File类/File类.iml" filepath="$PROJECT_DIR$/File类/File类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO+Properties联合使用/IO+Properties联合使用.iml" filepath="$PROJECT_DIR$/IO+Properties联合使用/IO+Properties联合使用.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Random/Random.iml" filepath="$PROJECT_DIR$/Random/Random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringBufferAndStringBuilder/StringBufferAndStringBuilder.iml" filepath="$PROJECT_DIR$/StringBufferAndStringBuilder/StringBufferAndStringBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String、int、Integer之间的转换/String、int、Integer之间的转换.iml" filepath="$PROJECT_DIR$/String、int、Integer之间的转换/String、int、Integer之间的转换.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String类测试/String类测试/String类测试.iml" filepath="$PROJECT_DIR$/String类测试/String类测试/String类测试.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test2/Test2.iml" filepath="$PROJECT_DIR$/Test2/Test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/使用生产者和消费者模式实现交替输出/使用生产者和消费者模式实现交替输出.iml" filepath="$PROJECT_DIR$/使用生产者和消费者模式实现交替输出/使用生产者和消费者模式实现交替输出.iml" />
+      <module fileurl="file://$PROJECT_DIR$/八个基本数据类型对应的包装类/八个基本数据类型对应的包装类/八个基本数据类型对应的包装类.iml" filepath="$PROJECT_DIR$/八个基本数据类型对应的包装类/八个基本数据类型对应的包装类/八个基本数据类型对应的包装类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/反射机制调用方法/反射机制调用方法.iml" filepath="$PROJECT_DIR$/反射机制调用方法/反射机制调用方法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/反编译Method/反编译Method.iml" filepath="$PROJECT_DIR$/反编译Method/反编译Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/只让类中的静态代码块执行/只让类中的静态代码块执行.iml" filepath="$PROJECT_DIR$/只让类中的静态代码块执行/只让类中的静态代码块执行.iml" />
+      <module fileurl="file://$PROJECT_DIR$/多态/多态.iml" filepath="$PROJECT_DIR$/多态/多态.iml" />
+      <module fileurl="file://$PROJECT_DIR$/实现守护线程/实现守护线程.iml" filepath="$PROJECT_DIR$/实现守护线程/实现守护线程.iml" />
+      <module fileurl="file://$PROJECT_DIR$/实现定时器/实现定时器.iml" filepath="$PROJECT_DIR$/实现定时器/实现定时器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/实现线程的两种方式/实现线程的三种方式.iml" filepath="$PROJECT_DIR$/实现线程的两种方式/实现线程的三种方式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/序列化/序列化.iml" filepath="$PROJECT_DIR$/序列化/序列化.iml" />
+      <module fileurl="file://$PROJECT_DIR$/序列化版本号/序列化版本号.iml" filepath="$PROJECT_DIR$/序列化版本号/序列化版本号.iml" />
+      <module fileurl="file://$PROJECT_DIR$/数字类/数字类/数字类.iml" filepath="$PROJECT_DIR$/数字类/数字类/数字类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/数据流/数据流.iml" filepath="$PROJECT_DIR$/数据流/数据流.iml" />
+      <module fileurl="file://$PROJECT_DIR$/数组测试/src/数组测试.iml" filepath="$PROJECT_DIR$/数组测试/src/数组测试.iml" />
+      <module fileurl="file://$PROJECT_DIR$/标准输出流/标准输出流.iml" filepath="$PROJECT_DIR$/标准输出流/标准输出流.iml" />
+      <module fileurl="file://$PROJECT_DIR$/注解/注解.iml" filepath="$PROJECT_DIR$/注解/注解.iml" />
+      <module fileurl="file://$PROJECT_DIR$/流/src/流.iml" filepath="$PROJECT_DIR$/流/src/流.iml" />
+      <module fileurl="file://$PROJECT_DIR$/生产者与消费者模式/生产者与消费者模式.iml" filepath="$PROJECT_DIR$/生产者与消费者模式/生产者与消费者模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/线程-同步代码块/线程-同步代码块.iml" filepath="$PROJECT_DIR$/线程-同步代码块/线程-同步代码块.iml" />
+      <module fileurl="file://$PROJECT_DIR$/线程安全问题/线程安全问题.iml" filepath="$PROJECT_DIR$/线程安全问题/线程安全问题.iml" />
+      <module fileurl="file://$PROJECT_DIR$/线程的sleep方法/线程的sleep方法.iml" filepath="$PROJECT_DIR$/线程的sleep方法/线程的sleep方法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/获取线程的名字/线程的名字.iml" filepath="$PROJECT_DIR$/获取线程的名字/线程的名字.iml" />
+      <module fileurl="file://$PROJECT_DIR$/线程调度的方法/线程调度的方法.iml" filepath="$PROJECT_DIR$/线程调度的方法/线程调度的方法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/终止线程的方法/终止线程的方法.iml" filepath="$PROJECT_DIR$/终止线程的方法/终止线程的方法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/终止线程的睡眠/终止线程的睡眠.iml" filepath="$PROJECT_DIR$/终止线程的睡眠/终止线程的睡眠.iml" />
+      <module fileurl="file://$PROJECT_DIR$/经典算法/经典算法.iml" filepath="$PROJECT_DIR$/经典算法/经典算法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/编程练习题/src/编程练习题.iml" filepath="$PROJECT_DIR$/编程练习题/src/编程练习题.iml" />
+      <module fileurl="file://$PROJECT_DIR$/获取Field/获取Field.iml" filepath="$PROJECT_DIR$/获取Field/获取Field.iml" />
+      <module fileurl="file://$PROJECT_DIR$/获取字节码Class的三种方式/获取字节码Class的三种方式.iml" filepath="$PROJECT_DIR$/获取字节码Class的三种方式/获取字节码Class的三种方式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/获取当前线程对象/获取当前线程对象.iml" filepath="$PROJECT_DIR$/获取当前线程对象/获取当前线程对象.iml" />
+      <module fileurl="file://$PROJECT_DIR$/获取类路径下的文件的绝对路径/获取类路径下的文件的绝对路径.iml" filepath="$PROJECT_DIR$/获取类路径下的文件的绝对路径/获取类路径下的文件的绝对路径.iml" />
+      <module fileurl="file://$PROJECT_DIR$/资源绑定器/资源绑定器.iml" filepath="$PROJECT_DIR$/资源绑定器/资源绑定器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/通过反射机制获取父类及其实现的接口/通过反射机制获取父类及其实现的接口.iml" filepath="$PROJECT_DIR$/通过反射机制获取父类及其实现的接口/通过反射机制获取父类及其实现的接口.iml" />
+      <module fileurl="file://$PROJECT_DIR$/通过反射机制访问属性/通过反射机制访问对象属性.iml" filepath="$PROJECT_DIR$/通过反射机制访问属性/通过反射机制访问对象属性.iml" />
+      <module fileurl="file://$PROJECT_DIR$/通过反射机制调用方法/通过反射机制调用方法.iml" filepath="$PROJECT_DIR$/通过反射机制调用方法/通过反射机制调用方法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/通过反射机制调用构造方法/通过反射机制调用构造方法.iml" filepath="$PROJECT_DIR$/通过反射机制调用构造方法/通过反射机制调用构造方法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/通过反射获取实例化对象/通过反射获取实例化对象.iml" filepath="$PROJECT_DIR$/通过反射获取实例化对象/通过反射获取实例化对象.iml" />
+      <module fileurl="file://$PROJECT_DIR$/通过读属性文件创建实例化对象/通过读属性文件创建实例化对象.iml" filepath="$PROJECT_DIR$/通过读属性文件创建实例化对象/通过读属性文件创建实例化对象.iml" />
+      <module fileurl="file://$PROJECT_DIR$/需要理解性的代码/需要理解性的代码.iml" filepath="$PROJECT_DIR$/需要理解性的代码/需要理解性的代码.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Arrays工具类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Since1970-1-1过了多少ms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/二分法查找" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/数字格式化" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/数组模拟栈" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/极高精度BigDecimal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/武器数组" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/获取当前日期" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/选择排序和冒泡排序" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/酒店管理系统" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

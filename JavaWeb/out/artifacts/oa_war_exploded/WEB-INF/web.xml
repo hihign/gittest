@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>com.bjpowernode.oa1.Test1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+
+    <!--新增部门-->
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>com.bjpowernode.oa1.DeptAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/dept/add</url-pattern>
+    </servlet-mapping>
+    <!--删除部门-->
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>com.bjpowernode.oa1.DeptDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/dept/delete</url-pattern>
+    </servlet-mapping>
+
+    <!--修改部门信息-->
+    <servlet>
+        <servlet-name>modify</servlet-name>
+        <servlet-class>com.bjpowernode.oa1.DeptModifyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>modify</servlet-name>
+        <url-pattern>/dept/modify</url-pattern>
+    </servlet-mapping>
+
+    <!--编辑部门-->
+    <servlet>
+        <servlet-name>edit</servlet-name>
+        <servlet-class>com.bjpowernode.oa1.DeptEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>edit</servlet-name>
+        <url-pattern>/dept/edit</url-pattern>
+    </servlet-mapping>
+
+   <!--部门详情-->
+    <servlet>
+        <servlet-name>detail</servlet-name>
+        <servlet-class>com.bjpowernode.oa1.DeptDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>detail</servlet-name>
+        <url-pattern>/dept/detail</url-pattern>
+    </servlet-mapping>
+
+    <!--部门列表-->
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <servlet-class>com.bjpowernode.oa1.DeptListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/dept/list</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试是否能跨域发送Ajax请求</title>
+</head>
+<body>
+<!--意思为：Ajax请求被同源策略阻止，根本原因：XMLHttpRequest对象在浏览器中只有一个，使用Ajax请求跨域访问会产生安全问题-->
+<!--Access to XMLHttpRequest at 'http://localhost:8081/b/ajaxrequest1?username=zhangsan?undefined'
+from origin 'http://localhost:8080' has been blocked by CORS policy: No 'Access-Control-Allow-Origin'
+header is present on the requested resource-->
+
+<!--
+怎么样才能跨域发送Ajax请求呢？
+1、设置响应头，设置访问控制允许源
+-->
+<script type="text/javascript" src="js/jQuery-1.0.0.js"></script>
+<script type="text/javascript">
+  $.ajax({
+    "type":"GET",
+    "url":"http://localhost:8081/b/ajaxrequest1?username=zhangsan",
+    "async":true,
+    "success":function (json){
+      $("#div1").html(json.username)
+    }
+  })
+</script>
+
+<div id="div1"></div>
+</body>
+</html>

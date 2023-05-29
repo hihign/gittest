@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.powernode.spring6.dao.beanPostProcessor.TestbeanPostProcessor"></bean>
+    <!--
+    <bean id="bean1" class="com.powernode.spring6.dao.BeanStepFive" init-method="initBean" destroy-method="destroyBean">
+        <property name="name" value="张三"></property>
+    </bean>
+-->
+<!--
+    <bean id="bean2" class="com.powernode.spring6.dao.BeanStepSeven" init-method="initBean" destroy-method="destroyBean">
+        <property name="name" value="张三"></property>
+    </bean>-->
+
+    <bean id="bean3" class="com.powernode.spring6.dao.BeanStepTen" init-method="initBean" destroy-method="destroyBean">
+        <property name="name" value="张三"></property>
+    </bean>
+</beans>

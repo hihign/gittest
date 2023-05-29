@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.mapper.CustomerMapper">
+    <!--Customer getById(Integer id);
+    private Integer id;
+    private String name;
+    private Integer age;
+    private List<Order> orderList;
+
+    private Integer id;
+    private String orderNumber;
+    private Double orderPrice;
+    根据客户id查询客户信息及其订单信息。而客户实体类中并不具备订单信息，
+    所以不能将查询到的结果直接封装成实体类。用resultMap映射-->
+    <resultMap id="customermap" type="customer">
+        <!--客户实体类中的属性-->
+        <!--主键属性绑定-->
+        <id property="id" column="cid"></id>
+        <!--非主键属性绑定-->
+        <result property="name" column="name"></result>
+        <result property="age" column="age"></result>
+        <collection property="orderList" ofType="order">
+            <result property="id" column="oid"></result>
+            <result property="orderNumber" column="orderNumber"></result>
+            <result property="orderPrice" column="orderPrice"></result>
+        </collection>
+    </resultMap>
+    <!--采用内连接之等值连接,mybatis会自动去重客户信息，并列出客户所有的订单信息。
+    采用内连接之等值连接由bug，如果等值条件匹配不上就查询的信息为空，我们实际上是需要查询客户信息的
+    所以这里应该采用外连接
+        <select id="getById" resultMap="customermap">
+        select c.id cid,name,age,o.id oid,orderNumber,orderPrice
+        from customer c inner join orders o on c.id=o.customer_id
+        where c.id=#{id}
+    </select>
+    -->
+    <!--采用外连接方式，一对多，站在客户角度查订单-->
+    <select id="getById" resultMap="customermap">
+        select c.id cid,name,age,o.id oid,orderNumber,orderPrice
+        from customer c left join orders o on c.id=o.customer_id
+        where c.id=#{id}
+    </select>
+</mapper>

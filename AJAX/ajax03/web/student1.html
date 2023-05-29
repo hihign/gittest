@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生列表信息</title>
+</head>
+<body>
+<script type="text/javascript">
+  window.onload=function (){
+    document.getElementById("btn").onclick=function (){
+      var xhr = new XMLHttpRequest()
+      xhr.onreadystatechange=function (){
+        if (this.readyState==4){
+          if (this.status==200){
+            var html = ""
+            var jsonList = JSON.parse(this.responseText)
+            for (var i=0;i<jsonList.length;i++){
+              var stu = jsonList[i]
+              html+="<tr>";
+              html+="<td>"+(i+1)+"</td>";
+              html+="<td>"+stu.name+"</td>";
+              html+="<td>"+stu.age+"</td>";
+              html+="<td>"+stu.addr+"</td>";
+              html+="</tr>";
+            }
+            document.getElementById("tbody").innerHTML=html
+          }else{
+            alert(this.status)
+          }
+        }
+      }
+      xhr.open("GET","/ajax03/request3",true)
+      xhr.send()
+    }
+  }
+
+</script>
+
+<input type="button" value="显示学员信息" id="btn"/><br>
+<hr>
+<table width="50%" border="1px">
+  <tr>
+    <th>序号</th>
+    <th>姓名</th>
+    <th>年龄</th>
+    <th>住址</th>
+  </tr>
+  <tbody id="tbody">
+  <!--<tr>
+    <td>1</td>
+    <td>张三</td>
+    <td>20</td>
+    <td>北京大兴区</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>李四</td>
+    <td>22</td>
+    <td>北京海淀区</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>王五</td>
+    <td>25</td>
+    <td>英国格里芬</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>赵六</td>
+    <td>26</td>
+    <td>法国巴黎</td>
+  </tr>-->
+  </tbody>
+</table>
+</body>
+</html>

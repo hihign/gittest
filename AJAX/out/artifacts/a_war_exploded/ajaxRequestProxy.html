@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax代理机制发送Ajax请求</title>
+</head>
+<body>
+<!--Ajax不能直接跨域发送Ajax请求，通过代理机制发送Ajax请求-->
+<script type="text/javascript" src="/a/js/jQuery-1.0.0.js"></script>
+<script type="text/javascript">
+  $(function (){
+    $("#btn").click(function (){
+      $.ajax({
+        "type":"GET",
+        "url":"http://localhost:8080/a/proxy",
+        "async":true,
+        "success":function (json){
+          $("#mydiv").html(json.username)
+        }
+      })
+    })
+  })
+</script>
+<button id="btn">发送Ajax请求给ProxyServlet(代理Servlet)</button>
+<div id="mydiv"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>采用jsonp发送跨域请求</title>
+</head>
+<body>
+<script type="text/javascript" src="/a/jsoffical/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    //自己指定函数名，并且自己定义被调函数（不采用jQuery默认调用success中的函数）
+    function sayHello(json) {
+        $("#div1").html("hello," + json.username)
+    }
+
+    $(function () {
+        /*不要将代码放在此处。因为页面加载完毕，首先会执行它，而它还没有获得服务器传过来的json
+         function sayHello(json){
+         $("#div1").html("hello,"+json.username)
+    }*/
+        $("#btn").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8081/b/jsonrequest3",
+                dataType: "jsonp",
+                jsonp: "fun",
+                jsonpCallback: "sayHello"
+            })
+        })
+    })
+</script>
+<button id="btn">采用jsonp发送跨域请求</button>
+<div id="div1"></div>
+</body>
+</html>
