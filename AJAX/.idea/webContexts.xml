@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/ajax04/web/ajax3.html" value="file://$PROJECT_DIR$/ajax04/web" />
+        <entry key="file://$PROJECT_DIR$/ajax05/web/autocomplete.html" value="file://$PROJECT_DIR$/ajax05/web" />
+        <entry key="file://$PROJECT_DIR$/b/web/fromarequest.html" value="file://$PROJECT_DIR$/b/web" />
+      </map>
+    </option>
+  </component>
+</project>

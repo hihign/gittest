@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-01-forwardAndredirect" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-02-returnjson" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-03-dateHandle" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-04-webinf" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-05-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-06-sm2ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-07-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-data2submit" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc-firsrtcode" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/springmvc-firsrtcode/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-data2submit/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-01-forwardAndredirect/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-02-returnjson/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-03-defaultArgs/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-03-dateHandle/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-04-webinf/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-05-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-06-sm2ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-07-ssm/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

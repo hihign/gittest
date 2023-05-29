@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--简单工厂模式获取Bean-->
+    <bean id="PersonBean" class="com.powernode.spring6.dao1.PersonFactory" factory-method="get">
+    </bean>
+
+    <!--工厂方法模式获取Bean-->
+    <bean id="PersonFactoryBean" class="com.powernode.spring6.dao2.PersonFactory"></bean>
+    <bean id="PersonBean1" factory-bean="PersonFactoryBean" factory-method="get"></bean>
+
+    <!--实现了Spring提供的FactoryBean，Spring就会知道通过哪个工厂对象调用哪个方法获取Bean-->
+    <bean id="PersonFactoryBean1" class="com.powernode.spring6.dao2.PersonFactory1"></bean>
+</beans>

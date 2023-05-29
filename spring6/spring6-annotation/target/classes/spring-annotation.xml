@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--使用注解声明bean
+    1、创建bean类
+    2、在bean类上加Component、Service、Controller、Repository四个注解之一
+    3、在xml文件中配置context命名空间
+    4、在xml文件中配置要扫描的包
+    5、使用bean
+    -->
+    <context:component-scan base-package="com.powernode.spring6"></context:component-scan>
+</beans>

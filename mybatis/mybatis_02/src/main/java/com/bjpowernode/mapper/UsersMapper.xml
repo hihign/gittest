@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.mapper.UsersMapper">
+    <select id="getAll" resultType="user">
+        select id,username,birthday,sex,address from users
+    </select>
+    <!--只有这么一个返回函数last_insert_id()-->
+    <insert id="insert" parameterType="user">
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+        select last_insert_id()
+        </selectKey>
+        insert into users(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+    <!--int delete(Integer id);-->
+    <delete id="delete" parameterType="int">
+        delete from users where id = #{id}
+    </delete>
+    <!--int update(User user);-->
+    <update id="update" parameterType="user">
+        update users set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address}
+        where id=#{id}
+    </update>
+    <!--//根据用户主键查询用户
+    User getById(Integer id);-->
+    <select id="getById" resultType="user">
+        select username,birthday,sex,address from users where id = #{id}
+    </select>
+    <!-- //根据用户名模糊查询用户
+    List<User> getByName(String username);-->
+    <select id="getByName" resultType="user">
+        select username,birthday,sex,address from users where username like "%${username}%"
+    </select>
+    <!--List<User> getByNamePlus(String username);
+        优化模糊查询，取出sql注入现象
+    -->
+    <select id="getByNamePlus" resultType="user">
+        select username,birthday,sex,address from users
+            where username like concat("%",#{username},"%")
+    </select>
+    <!--List<User> getByNameOrAddress(String nameOrAge,String value);
+    1、按用户名或地址模糊查询,接口中使用@Param注解后，sql语句才能拿到对应的参数
+    2、此处验证了${}用于字符串的拼接或替换，此处是替换。
+    3、入参超过一个不写，是基本数据类型+包装类+String都可以不写-->
+    <select id="getByNameOrAddress" resultType="user">
+        select username,birthday,sex,address from users
+            where ${nameOrAge} like concat('%',#{value},'%')
+    </select>
+</mapper>

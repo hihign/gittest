@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://C:/src/main/java" charset="UTF-8" />
+    <file url="file://C:/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-01-forwardAndredirect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-01-forwardAndredirect/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-02-returnjson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-02-returnjson/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-03-dateHandle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-03-dateHandle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-04-webinf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-04-webinf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-05-ssm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-05-ssm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-06-sm2ssm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-06-sm2ssm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-07-ssm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-07-ssm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-data2submit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-data2submit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-firsrtcode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../src/main/resources" charset="UTF-8" />
+  </component>
+</project>

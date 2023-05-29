@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+">
+<!--
+引入外部的属性配置文件：
+    1.引入context命名空间
+    2.通过标签引入属性配置文件
+    location 默认从类路径下加载资源
+-->
+    <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
+    <bean id="datasource1" class="com.powernode.spring6.dao.MyDataSource1">
+        <property name="properties">
+            <props>
+                <prop key="driver">${jdbc.driver}</prop>
+                <prop key="url">${jdbc.url}</prop>
+                <prop key="username">${jdbc.username}</prop>
+                <prop key="password">${jdbc.password}</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-03-dateHandle" />
+        <module name="springmvc-04-webinf" />
+        <module name="springmvc-firsrtcode" />
+        <module name="springmvc-05-ssm" />
+        <module name="springmvc-data2submit" />
+        <module name="springmvc-07-ssm" />
+        <module name="springmvc-03-defaultArgs" />
+        <module name="springmvc-02-returnjson" />
+        <module name="springmvc-01-forwardAndredirect" />
+        <module name="springmvc-06-sm2ssm" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

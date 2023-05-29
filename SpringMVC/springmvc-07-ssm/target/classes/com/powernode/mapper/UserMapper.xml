@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.powernode.mapper.UserMapper">
+    <insert id="insert">
+        insert into user values(#{userId},#{cardType},#{cardNo},#{userName},#{userSex},#{userAge},#{userRole})
+    </insert>
+
+    <delete id="delete">
+        delete from user where user_id=#{userId}
+    </delete>
+
+    <update id="update">
+        update user set card_type=#{cardType},card_no=#{cardNo},
+                        user_name=#{userName},user_sex=#{userSex},user_age=#{userAge},user_role=#{userRole}
+        where user_id=#{userId}
+    </update>
+    <select id="select" resultType="user">
+        select user_id,card_type,card_no,user_name,user_sex ,user_age ,user_role from user
+        <where>
+            <if test="userName!=null and userName!=''">
+                and user_name=#{userName}
+            </if>
+            <if test="userSex!=null and userSex!=''">
+                and user_sex=#{userSex}
+            </if>
+        </where>
+        limit #{startRow},5
+    </select>
+
+    <select id="getCountRow" resultType="int">
+        select count(*) from user
+        <where>
+            <if test="userName!=null and userName!=''">
+                and user_name=#{userName}
+            </if>
+            <if test="userSex!=null and userSex!=''">
+                and user_sex=#{userSex}
+            </if>
+        </where>
+    </select>
+</mapper>

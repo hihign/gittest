@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+">
+
+    <!--p命名空间是基于set方法的-->
+    <bean id="DrinkBean" class="com.powernode.spring6.dao.Drink" p:id="1001" p:name="beer"></bean>
+
+    <!--c命名空间是基于构造方法的-->
+    <bean id="DrinkBeanToConstructor" class="com.powernode.spring6.dao.Drink" c:name="wine" c:id="1002"></bean>
+
+    <!--使用util命名空间是为了代码复用，当两个类都需要给相同类型的属性赋一样的值，可以使用util命名空间-->
+    <util:properties id="prop">
+        <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+        <prop key="url">jdbc:mysql://localhost:3306/spring6</prop>
+        <prop key="username">root</prop>
+        <prop key="password">Mr.Feng1</prop>
+    </util:properties>
+    <bean id="datasource1" class="com.powernode.spring6.dao.MyDataSource1">
+        <property name="properties" ref="prop"></property>
+    </bean>
+    <bean id="datasource2" class="com.powernode.spring6.dao.MyDataSource2">
+        <property name="properties" ref="prop"></property>
+    </bean>
+</beans>

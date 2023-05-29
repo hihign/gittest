@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>采用jsonp 发送跨域请求，达到局部刷新效果</title>
+</head>
+<body>
+<script type="text/javascript">
+    function sayHello(json){
+        document.getElementById("mydiv").innerHTML=json.username
+    }
+  window.onload= ()=>{
+    document.getElementById("btn").onclick= ()=>{
+      //点击按钮，将script标签加载到body中执行。
+      var htmlScriptElement = document.createElement("script");
+      //设置script标签的type属性
+      htmlScriptElement.type="text/javascript"
+      //设置script标签的src属性
+      htmlScriptElement.src="http://localhost:8081/b/jsonrequest1?fun=sayHello"
+      document.getElementsByTagName("body")[0].appendChild(htmlScriptElement)
+    }
+  }
+</script>
+<button id="btn">采用jsonp发送跨域请求，达到局部刷新效果</button>
+<div id="mydiv"></div>
+</body>
+</html>

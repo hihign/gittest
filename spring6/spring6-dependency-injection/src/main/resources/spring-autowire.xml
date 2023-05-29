@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--通过名字自动装配、注入
+        名字：就是bean的id，该id是set方法名去掉set，剩余首字母小写
+    -->
+    <bean id="PeopleBean" class="com.powernode.spring6.dao1.People" autowire="byName"></bean>
+    <bean id="friends" class="com.powernode.spring6.dao.Friend">
+        <property name="name" value="张三"></property>
+        <property name="age" value="20"></property>
+    </bean>
+
+    <!--通过类型装配-->
+    <bean id="PeopleBean1" class="com.powernode.spring6.dao1.People" autowire="byType"></bean>
+    <bean class="com.powernode.spring6.dao.Friend">
+        <property name="name" value="张三"></property>
+        <property name="age" value="20"></property>
+    </bean>
+</beans>

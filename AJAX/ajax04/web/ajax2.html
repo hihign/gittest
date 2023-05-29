@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>发送ajax请求</title>
+</head>
+<body>
+<script type="text/javascript" src="/ajax04/js/jQuery-1.0.0.js"></script>
+<script type="text/javascript">
+  $(function (){
+    $("#btn").click(function (){
+      $(jQuery.ajax({
+        "type":"post",
+        "url":"/ajax04/request2",
+        "async":true,
+        "data":"username="+$("#username").val(),
+        "success":function (json){
+          $("#myspan").html(json.username)
+        }
+      }))
+    })
+  })
+</script>
+用户名：<input type="text" id="username">
+<span id="myspan"></span>
+</br>
+<input type="button" value="提交" id="btn">
+</body>
+</html>
