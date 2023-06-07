@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证用户名是否可用</title>
+</head>
+<body>
+<script type="text/javascript">
+    window.onload=function (){
+        document.getElementById("username").onfocus=function (){
+            document.getElementById("myspan").innerHTML=" "
+        }
+        document.getElementById("username").onblur=function (){
+            var xhr = new XMLHttpRequest()
+            xhr.onreadystatechange=function (){
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        document.getElementById("myspan").innerHTML=this.responseText
+                    }
+                }
+            }
+            var value = document.getElementById("username").value;
+            xhr.open("GET","/ajax01/request1?username="+value+"&t="+new Date().getTime(),true)
+            xhr.send();
+        }
+    }
+
+</script>
+
+用户名：<input type="text" name="username" id="username" />
+<span id="myspan"></span>
+</body>
+</html>
